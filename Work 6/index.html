@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* styles.css */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+        }
+
+        .container {
+            position: relative;
+            width: 1000px;
+            height: 600px;
+        }
+
+        .background-image,
+        .overlay-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .skip-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .skip-button:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <img src="1.png" alt="Reklam" class="overlay-image" id="reklam">
+        <img src="2.png" alt="Film" class="background-image">
+        <button id="skipButton" class="skip-button">Reklamın Bitmesi için: 15</button>
+    </div>
+
+
+
+    <script src="typescript.js"></script>
+</body>
+
+</html>
