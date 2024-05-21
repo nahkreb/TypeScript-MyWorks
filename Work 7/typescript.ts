@@ -1,3 +1,5 @@
+//POP-UP REKLAM
+
 function gerisayim(): void {
     const sayac: number = 35; // toplam süre
     const countElement: HTMLElement | null = document.getElementById('skipButton');
